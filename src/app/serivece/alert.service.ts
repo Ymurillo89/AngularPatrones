@@ -39,8 +39,5 @@ export class AlertService {
       confirmButtonColor: 'red'
     })
   }
-
-
-
   
 }
