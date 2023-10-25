@@ -42,25 +42,5 @@ export class AlertService {
 
 
 
-  AlertSearch(text: string){
-    return Swal.fire({
-      title: text,
-      input: 'text',
-      icon: 'question',
-      inputAttributes: {
-        autocapitalize: 'off',
-        typeof: 'number'
-      },
-      showCancelButton: true,
-      confirmButtonText: 'Consultar',
-      showLoaderOnConfirm: true,
-      allowOutsideClick: () => !Swal.isLoading()
-    }).then((result) => {
-      if (result.isConfirmed) 
-        return result.value
-      else if(result.isDenied)
-        return 'false'
-      
-    })
-  }
+  
 }
